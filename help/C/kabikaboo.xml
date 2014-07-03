@@ -1,0 +1,1164 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY appversion "1.7">
+  <!ENTITY manrevision "0.1">
+  <!ENTITY date "December 2009">
+  <!ENTITY app "Kabikaboo">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Kabikaboo Manual</title>
+	 <copyright>
+		<year>2009</year>
+		<holder>Dave Kerr</holder> </copyright>	 
+	 <copyright>
+		<year>2009</year>
+		<holder>Jeremy Bicha</holder> </copyright>
+	 <copyright>
+		<year>2007</year>
+		<holder>GNOME Documentation Project</holder> </copyright>	 
+	 <copyright>
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright>
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer">
+		<publishername>Kabikaboo</publishername>
+	 </publisher>	 
+
+	 <xi:include href="legal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+	 <authorgroup>
+           <author>
+             <firstname>Dave</firstname>
+             <surname>Kerr</surname>
+           </author>
+		<author>
+			<firstname>Jeremy</firstname> 
+			<surname>Bicha</surname>
+		</author>
+        <author>
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author>
+		  <firstname>GNOME Documentation Project</firstname>
+		  <surname></surname>
+		  <affiliation>
+			 <orgname>GNOME</orgname>
+		  </affiliation>
+		</author>
+		<author>
+			<firstname>Hal</firstname> 
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>		
+		<author>
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname></surname>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author>
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>GNOME Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision>
+		  <revnumber>gedit V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision>
+		  <revnumber>gedit Manual V2.8</revnumber>
+		  <date>August 2004</date>
+		  <revdescription>
+			 <para role="author">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision>
+		  <revnumber>gedit Manual V2.9</revnumber>
+		  <date>May 2009</date>
+		  <revdescription>
+			 <para role="author">GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Kabikaboo Manual v0.1</revnumber>
+		  <date>December 2009</date>
+		  <revdescription>
+			 <para role="author">Jeremy Bicha <email>jeremy@bicha.net</email>
+				</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo> This manual describes version &appversion; of &app;.
+		</releaseinfo>
+	 <legalnotice>
+		<title>Feedback</title>
+		<para>To report a bug or make a suggestion regarding the <application>&app;</application> application or this manual, follow the directions at the <ulink url="https://bugs.launchpad.net/kabikaboo/+filebug" type="help">Kabikaboo Report a Bug website</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>&app; is a tree-based text editor, designed to help you plan a book or complex project. Kabikaboo's user interface is designed to manage maneuverability inside a massive tree. Each node can be View or Edit, and each can have any arrangement of children, and the nodes can be moved around freely. Kabikaboo can be used to plan a series of books, technical manuals, software projects or anything that would benefit from tree-based text organization.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm><primary>kabikaboo</primary></indexterm>
+  <indexterm><primary>recursive writing assistant</primary></indexterm>
+
+<!--TODO
+    Describe:
+        *Import/Export
+        *View Menu
+        *Bookmarks
+        *Visits
+        *The Whole Node thing (& perhaps think of a better term/analogy than 
+        node for writers to understand)
+    Keyboard shortcuts for nodes (will likely change in next release anyway...)
+-->
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="kabikaboo-intro">
+	 <title>Introduction</title>
+	 
+	 <para>The <application>&app;</application> application aims to make the author's life easier by providing a way to edit and organize a collection of related text files.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="kabikaboo-getting-started">
+	 <title>Getting Started</title>
+
+<!-- ============= To Start Kabikaboo ============================ -->
+	 <sect2 id="kabikaboo-to-start">
+		<title>Starting &app;</title>
+		<para>You can start <application>&app;</application> in the following ways:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term><guimenu>Applications</guimenu> menu</term>
+    		<listitem>
+    		<para>Choose <menuchoice><guisubmenu>Office</guisubmenu><guimenuitem>Kabikaboo</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Command line</term>
+    		<listitem>
+    		<para>Execute the following command: <command>kabikaboo</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <!--would be nice...
+    <para>By default, when you open a kaboo document in the file manager, Kabikaboo will start, and display the document.</para>
+    -->
+	</sect2>
+
+	<sect2 id="kabikaboo-when-you-start">
+
+		<title>The &app; Window</title>
+		<para>When you start <application>&app;</application>, the following window is displayed:</para>
+
+		<figure id="kabikaboo-window">
+		  <title>&app; Window</title>
+		  <screenshot>
+			 <mediaobject>
+				<imageobject>
+				  <imagedata fileref="figures/kabikaboo_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows Kabikaboo main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>The <application>&app;</application> window contains the following
+		  elements: </para>
+		<variablelist>
+		  <varlistentry> <term>Menubar</term>
+			 <listitem>
+				<para>The menus on the menubar contain all of the commands you need to work with files in <application>&app;</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Toolbar</term>
+			 <listitem>
+				<para> The toolbar contains a subset of the commands that you can access from the menubar.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Display area</term>
+			 <listitem>
+				<para> The display area contains the text of the file that you are editing. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Statusbar</term>
+			 <listitem>
+				<para>The statusbar displays information about current <application>&app;</application> activity and contextual information about the menu items.</para> <!--The statusbar also displays the following information:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Cursor position: the line number and column number where the cursor is located.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Edit mode: If the editor is in insert mode, the statusbar contains the text <guilabel>INS</guilabel>. If the editor is in overwrite mode, the statusbar contains the text <guilabel>OVR</guilabel>. Press the <keycap>Insert</keycap> key to change edit mode.</para>
+		  </listitem>
+		  </itemizedlist>
+		  -->
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Side Pane</term>
+			 <listitem>
+				<para>The side pane displays a heirarchy or <firstterm>tree</firstterm> representing the sections of the open document.</para>
+				<para>Click the <guimenuitem>View</guimenuitem> or <guimenuitem>Edit</guimenuitem> buttons at the bottom of the side pane to switch between view-only and edit modes.</para>
+				<!--
+				<para>By default the side pane is not shown. To show it, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice>.</para>
+				-->
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>When you right-click in the <application>&app;</application> window, the application displays a popup menu. The popup menu contains the most common text editing commands. </para>
+
+		<para>Like other applications, actions in <application>&app;</application> can be performed in several ways: with the menu, with the toolbar, or with shortcut keys. Shortcuts keys common to all applications are listed in the <ulink type="help" url="ghelp:user-guide?shortcuts-apps">User Guide</ulink>.</para>
+	 </sect2>
+
+<!-- I don't think Kabikaboo supports opening files from the command line yet -->
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+<!--	 <sect2 id="kabikaboo-run-from-cmd-line">
+		<title>Running &app; from a Command Line</title>
+		<para>You can run <application>&app;</application> from a command line and open a single file or multiple files. To open multiple files from a command line, type the following command, then press <keycap>Return</keycap>:</para>
+		<para><command>kabikaboo <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>Alternatively, you can specify a URI instead of a filename.</para>
+    <para>For more information on how to run <application>&app;</application> from a command line, see the unix manual page for &app;, <ulink url="man:kabikaboo" type="man"><citerefentry><refentrytitle>&app;</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+	 -->
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="kabikaboo-usage">
+	 <title>Working with Files</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="kabikaboo-create-new-file">
+		<title>Creating a New Document</title>
+		<para>To create a new document, choose <menuchoice><guimenu>File</guimenu><guimenuitem>New</guimenuitem></menuchoice>. The application displays a new blank document in the <application>&app;</application> window.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="kabikaboo-open-file">
+		<title>Opening a File</title>
+		<para>To open a file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open...</guimenuitem></menuchoice> to display the <guilabel>Open File</guilabel> dialog. Select the file that you want to open, then click <guibutton>Open</guibutton>. The file is displayed in the <application>&app;</application> window. </para>
+
+		<para>The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu><guimenuitem>Open Recent</guimenuitem></menuchoice> menu.</para>
+
+		<note><para>You can only open one file at a time in Kabikaboo. This is intentional as it would likely be confusing to attempt to edit multiple sections of multiple documents in the same window.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="kabikaboo-save-file">
+		<title>Saving a File</title>
+		<para>You can save files in the following ways:</para>
+		<itemizedlist>
+		  <listitem><para>To save changes to an existing file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></menuchoice>. </para>
+		  </listitem>
+		  <listitem><para>To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para>To save a file under a new filename but keep the file with the existing filename open, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save Copy...</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save Copy</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para>To save a file with an automatically generated three-digit version number, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save Version</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+     <!--TODO
+		<para>To close all of the files that are currently open in <application>&app;</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+		-->
+	 </sect2>
+
+<!-- ============= Save a File Preferences ============================== -->
+	 <sect2 id="kabikaboo-save-preferences">
+	    <title>Saving and Loading Preferences</title>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Autosave</guilabel> </term>
+            <listitem>
+              <para>Select the <guilabel>Autosave</guilabel> option to have your file automatically saved every 5 minutes. If your work is interrupted for any reason you should be able to pick up where you left off with minimal difficulty.</para>
+              <para> The time between automatic saves can be configured in <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Open Last File on Startup</guilabel> </term>
+            <listitem>
+              <para>Select the <guilabel>Open Last File on Startup</guilabel> option if you want the file you were working on when you last exited the application to be automatically opened for you when you start the application.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Save File on Exit</guilabel> </term>
+            <listitem>
+              <para>Select the <guilabel>Save File on Exit</guilabel> option to have Kabikaboo automatically save the file you are working on when you exit the application.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Working with Text</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="kabikaboo-edit-text">
+		<title>Editing Text</title>
+		<para>You can edit the text of a file in the following ways:</para>
+		<itemizedlist>
+		  <listitem><para>Type new text from the keyboard. The blinking <firstterm>insertion cursor</firstterm> marks the point where new text appears. To change this, use the arrow keys on the keyboard or click with the mouse.</para>
+		  </listitem>
+		  <listitem><para>To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <!--not implemented
+		  <listitem><para>To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  -->
+		  <listitem><para>To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from &app; or another application.</para>
+		  </listitem>
+		  <!--not implemented
+		  <listitem><para>To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		  -->
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="kabikaboo-undo-redo-edits">
+		<title>Undoing and Redoing Changes</title>
+		<para>To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<!--
+	<sect1 id="kabikaboo-find">
+		<title>Finding and Replacing</title>
+
+		<para>In <application>&app;</application>, there are two ways of searching for text. You can use the <guilabel>Find</guilabel> dialog to search for a specific piece of text, or <guilabel>Incremental Search</guilabel> to highlight matching text as you type it.
+		</para>
+		-->
+		
+<!-- ============= To Find Text ================================ -->
+     <!--
+	 <sect2 id="kabikaboo-find-text">
+		<title>Finding Text</title>
+		<para>To search a file for a string of text, perform the following steps:</para>
+		<orderedlist>
+		  <listitem><para>Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Type the string that you want to find in the <guilabel>Search for</guilabel> field. You can include special characters such as a new line or tab: see <xref linkend="kabikaboo-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Find</guibutton> to search the file for the first occurrence of the string after your current cursor position. If <application>&app;</application> finds the string, the application selects first occurrence of the string. Other occurrences of the string are highlighted.</para>
+		  </listitem>
+		  <listitem><para>To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para>After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para>To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="kabikaboo-find-incremental">
+	   <title>Incremental Search</title>
+
+	   <para>Incremental search highlights matching text in the document as you type it letter by letter. (This is similar to the search feature in several web browsers.)</para>
+	   <para>To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>Begin typing, and text that matches will be highlighted in the document. The first instance after the cursor position is also selected.</para>
+	   <para>To advance the selection to the next match while keeping the incremental search box open, press <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Press <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo> to go back to the previous match.</para>
+	   <tip><para>You can also use the up and down arrow keys or the mouse wheel to move the selection between matches.</para></tip>
+	 </sect2>
+	 -->
+
+<!-- ============= To Find and Replace Text =================== -->
+     <!--
+	 <sect2 id="kabikaboo-find-replace-text">
+		<title>Replacing Text</title>
+
+		<para>To search a file for a string, and replace the string with an alternative string, perform the following steps:</para>
+		<orderedlist>
+		  <listitem><para>Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Type the string that you want to find, in the <guilabel>Search for</guilabel> field. You can include special characters such as a new line or tab: see <xref linkend="kabikaboo-find-escapes"/>.</para></listitem>
+		  <listitem><para>Type the string that you want to use to replace the string that you find, in the <guilabel>Replace with</guilabel> field.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>To examine each occurrence of the string before replacing it, click <guibutton>Find</guibutton>. If <application>&app;</application> finds the string, the application selects the string. Click <guibutton>Replace</guibutton> to replace the selected occurrence of the string. To find the next occurrence of the string, click <guibutton>Find</guibutton> again.</para>
+		<para>To replace all occurrences of the string throughout the document, click <guibutton>Replace All</guibutton>.</para>
+	 </sect2>
+	 -->
+
+<!-- ============= Find and Replace Options ============================ -->
+	 <!--
+	 <sect2 id="kabikaboo-find-options">
+		<title>Find and Replace Options</title>
+		<para>The <guilabel>Find</guilabel> dialog and the <guilabel>Replace</guilabel> dialog both have the following options:</para>
+		<itemizedlist>
+		  <listitem><para>Select the <guilabel>Match case</guilabel> option to only find occurrences of the string that match the case of the text that you type. For example, with <guilabel>Match case</guilabel> selected, "TEXT" will not match "text".</para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Match entire word only</guilabel> option to only find occurrences of the string that match the entire words of the text that you type. For example, with <guilabel>Match entire word only</guilabel> selected, "text" will not match "texture". --><!-- translators, please make up your own example ;) --><!--</para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Search backwards</guilabel> option to search backwards towards the beginning of the document. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Wrap around</guilabel> option to search to one end of the document and then continue the search from the other end of the file. </para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+  -->
+
+<!-- ============= Special Characters ============================ -->
+     <!--
+	 <sect2 id="kabikaboo-find-escapes">
+	   <title>Special Characters</title>
+	     <para>You can include the following escape sequences in the text to find or replace to represent special characters:</para>
+			 <variablelist>
+        <varlistentry>
+          <term><literal>\n</literal></term>
+    				<listitem>
+              <para>Specifies a new line.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\t</literal></term>
+    				<listitem>
+              <para>Specifies a tab character.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\r</literal></term>
+    				<listitem>
+              <para>Specifies a carriage return.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\\</literal></term>
+    				<listitem>
+              <para>The backslash character itself must be escaped if it is being searched for.
+                    For example, if you are looking for the "<literal>\n</literal>" literal, you will
+                    have to type "\\n" in the <guilabel>Search for</guilabel> field. Or if you are
+                    looking for a sequence of backslashes, you will have to double the number of 
+                    searched backslashes.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+  </sect1>
+
+  <sect1 id="kabikaboo-printing">
+    <title>Printing</title>
+    -->
+
+<!-- ============= To Set the Page Options ============================ -->
+     <!--
+	 <sect2 id="kabikaboo-page-setup">
+		<title>Setting the Page Options</title>
+
+		<para>To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para>The <guilabel>Page Setup</guilabel> dialog enables you to specify the following print options:</para>
+
+		<sect3 id="kabikaboo-page-setup-general">
+		<title>General Tabbed Section</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>Select this option to print syntax highlighting. For more information about syntax highlighting, see <xref linkend="kabikaboo-set-highlightmode"/>.  </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>Select this option to include a header on each page that you print. You cannot configure the header. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Select the <guilabel>Print line numbers</guilabel> option to include line numbers when you print a file. </para>
+				<para>Use the <guilabel>Number every ... lines </guilabel> spin box to specify how often to print the line numbers, for example every 5 lines, every 10 lines, and so on. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para>Select the <guilabel>Enable text wrapping</guilabel> option to wrap text onto the next line, at a character level, when you print a file. The application counts wrapped lines as one line for line numbering purposes.
+				  </para>
+				<para>Select the <guilabel>Do not split words over two lines</guilabel> option to wrap text onto the next line, at a word level, when you print a file.
+				  </para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="kabikaboo-page-setup-fonts">
+	 		<title>Fonts</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>Click on this button to select the font to use to print the body text of a file.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Click on this button to select the font to use to print line numbers.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>Click on this button to select the font to use to print the headers and footers in a file.  </para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>To reset the fonts to the default fonts for printing a file from <application>&app;</application>, click <guibutton>Restore Default Fonts</guibutton>.</para>
+		</sect3>
+
+	 </sect2>
+	 -->
+
+<!-- ============= To Print a File ============================ -->
+     <!--
+	 <sect2 id="kabikaboo-print-file">
+		<title>Printing a Document</title>
+		<para>You can use <application>&app;</application> to perform the following print operations:</para>
+		<itemizedlist>
+		  <listitem><para>Print a document to a printer. </para>
+		  </listitem>
+		  <listitem><para>Print the output of the print command to a file.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>If you print to a file, <application>&app;</application> sends the output of the file to a pre-press format file. The most common pre-press formats are PostScript and Portable Document Format (PDF).</para>
+
+		<para>To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para>To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para>The <guilabel>Print</guilabel> dialog enables you to specify the following print options:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Job Tabbed Section</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>Select one of the following options to determine how many pages to print:</para>
+				<itemizedlist>
+				<listitem>
+				<para><guilabel>All</guilabel></para>
+				<para>Select this option to print all of the pages in the file.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Lines</guilabel></para>
+				<para>Select this option to print the specified lines only. Use the <guilabel>From</guilabel> and <guilabel>To</guilabel> spin boxes to specify the line range.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Selection</guilabel></para>
+				<para>Select this option to print the selected text only. This option is only available if you select text.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para>Use the <guilabel>Number of copies</guilabel> spin box to specify the number of copies of the file that you want to print.</para>
+				<para>If you print multiple copies of the file, select the <guilabel>Collate</guilabel> option to collate the printed copies.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Printer Tabbed Section</title>
+	<variablelist>
+	  <varlistentry> <term><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>Use this drop-down list to select the printer to which you want to print the file.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>Use this drop-down list to select the printer settings.
+              </para>
+	      <para>To configure the printer, click <guibutton>Configure</guibutton>. For example, you can enable or disable duplex printing, or schedule delayed printing, if this functionality is supported by the printer.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>
+                Use this drop-down list to select one of the following print destinations:
+	      </para>
+	      <variablelist>
+	        <varlistentry>
+	          <term><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a CUPS printer.
+	            </para>
+	            <note>
+	              <para>
+                        If the selected printer is a CUPS printer, <guilabel>CUPS</guilabel> is the only entry in this drop-down list.
+	              </para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a printer.
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a PostScript file.
+	            </para>
+	            <para>
+                      Click <guibutton>Save As</guibutton> to display a dialog where you specify the name and location of the PostScript file.
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>
+                      Use the specified command to print the file.
+	            </para>
+	            <para>
+                      Type the name of the command in the text box. Include all command-line arguments.
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Paper Tabbed Section</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>Use this drop-down list to select the size of the paper to which you want to print the file.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>Use this spin box to specify the width of the paper. Use the adjacent drop-down list to change the measurement unit.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>Use this spin box to specify the height of the paper.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>Use this drop-down list to select the orientation of the paper in the printer.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>Use this drop-down list to select the page orientation.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>Use this drop-down list to select the page layout. A preview of each layout that you select is displayed in the <guilabel>Preview</guilabel> area.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>Use this drop-down list to select the paper tray.
+              </para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+	  -->
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="kabikaboo-shortcutkeys"> 
+  <title>Shortcut Keys</title>
+  <para>Use shortcut keys to perform common tasks more quickly than with the mouse and menus. The following tables list all of <application>&app;</application>'s shortcut keys.</para>
+  <para>For more on shortcut keys, see the <ulink type="help" url="ghelp:user-guide?keyboard-skills">Desktop User Guide</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+  <bridgehead>Tabs</bridgehead>
+	<para>Shortcuts for tabs:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Shortcut Key</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Command</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>Ctrl + Tab</para></entry>
+          <entry><para>Switches to the next tab to the right.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Shift + Ctrl + Tab</para></entry>
+          <entry><para>Switches to the next tab to the leftt.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Close tab.</para></entry>
+        </row>
+        <!--not implemented
+        <row valign="top">               
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>Close all tabs. </para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Jump to nth tab.</para></entry>
+        </row>
+        -->
+      </tbody>
+    </tgroup>
+  </informaltable>
+  -->
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Files</bridgehead>
+	<para>Shortcuts for working with files:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Shortcut Key</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Command</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Create a new document.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Open a document.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Save the current document to disk.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>Save the current document with a new filename.</para></entry>
+                      </row>
+                      <!--
+                      <row valign="top">               
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Print the current document.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>Print preview.</para></entry>
+                      </row>
+                      -->
+                      <row valign="top">               
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Quit Kabikaboo.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Edit</bridgehead>
+	<para>Shortcuts for editing documents:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Shortcut Key</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Command</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Undo the last action.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>Redo the last undone action .</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Cut the selected text or region and place it on the clipboard.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Copy the selected text or region onto the clipboard.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Paste the contents of the clipboard.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Select all.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Left</para></entry>
+                        <entry><para>Move the cursor to the beginning of the previous word.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Right</para></entry>
+                        <entry><para>Move the cursor to the end of the next word.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Up</para></entry>
+                        <entry><para>Move the cursor to the beginning of the previous paragraph.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Down</para></entry>
+                        <entry><para>Move the cursor to the end of the next paragraph.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+    <!--
+	<bridgehead>Panes</bridgehead>
+	<para>Shortcuts for showing and hiding panes:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Shortcut Key</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Command</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>F9</para></entry>
+                        <entry><para>Show/hide the side pane.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Show/hide the bottom pane.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+                -->
+
+  <!-- ============= Search ======================= -->
+    <!--
+	<bridgehead>Search</bridgehead>
+	<para>Shortcuts for searching:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Shortcut Key</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Command</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Find a string.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Find the next instance of the string.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>Find the previous instance of the string.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Interactive search.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Search and replace.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>Clear highlight.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Goto line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+                -->
+                
+  <!-- ============= Help ======================= -->
+	<bridgehead>Help</bridgehead>
+	<para>Shortcuts for help:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Shortcut Key</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Command</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>F1</para></entry>
+          <entry><para>Open <application>&app;</application>'s user manual.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="kabikaboo-prefs">
+    <title>Preferences</title>
+
+    <para>To configure <application>&app;</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.</para>
+    <!--TODO-->
+    <para> Changes are applied immediately unless otherwise noted.</para>
+<para>To close the <guilabel>Preferences</guilabel> dialog, click <guibutton>Close</guibutton>.</para>
+   
+  </sect1>
+  <sect1 id="kabikaboo-tools">
+    <title>Tools</title>
+        <!--TODO-->
+  		  <listitem>
+  		    <para><application><link linkend="gedit-document-statistics-plugin">Document Statistics</link></application> shows the number of lines, words, and characters in the document. </para>
+  		  </listitem>
+
+<sect2 id="kabikaboo-document-statistics">
+<title>Document Statistics</title>
+	<para>The <application>Document Statistics</application> tool calculates and displays various statistical figures to assist in tracking your writing progress.</para>
+
+    <para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Starting Word Count.
+		                </para>
+		      </listitem>
+		      <listitem><para>Current Word Count.
+		                </para>
+		      </listitem>
+		      <listitem><para>Words This Session.
+		                </para>
+		      </listitem>
+		      <listitem><para>Time of Session.
+		                </para>
+		      </listitem>
+		      <listitem><para>Words per Minute.
+		                </para>
+		      </listitem>
+		      <listitem><para>Words in Node.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		      <para>To close the <guilabel>Document Statistics</guilabel> dialog, click <guibutton>Close</guibutton>.</para>
+		<note><para>By default, <application>&app;</application> only updates statistics when the <guilabel>Document Statistics</guilabel> window is open. If you would prefer for statistics to be updated in the background, select the <guilabel>Calculate Statistics in the Background</guilabel> option in <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.</para></note>
+
+</sect2>
+
+<sect2 id="kabikaboo-spell-checker">
+<title>Spell Checker</title>
+	<para>The <application>Spell Checker</application> checks whether the words used can be found in the dictionary.To use the Spell checker, perform the following steps:</para>
+		<orderedlist>
+		  <listitem><para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again.</para></listitem>
+          <listitem><para>Unknown spellings are underlined with a red squiggly line. Right-click on an unknown spelling:
+				</para>
+		    <itemizedlist>
+		      <listitem><para>To replace the unknown spelling with another spelling in the list, select the replacement spelling.
+				</para>
+		      </listitem>
+		      <listitem><para>To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenuitem>Add to Dictionary</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para>To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>&app;</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>To change the language used for the spell checker, right click in the text area and select the <menuchoice> <guimenu>Languages</guimenu></menuchoice> menu. Select the appropriate language from the list.
+		</para>
+		  </listitem>
+		</orderedlist>
+		<note><para>The spell checker is turned off by default since it slows down loading files. This may be particularly noticable with large files.</para></note>
+</sect2>
+</sect1>
+
+</article>

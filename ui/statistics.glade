@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<interface>
+  <!-- interface-requires gtk+ 2.12 -->
+  <!-- interface-naming-policy toplevel-contextual -->
+  <object class="GtkWindow" id="window_statistics">
+    <property name="title" translatable="yes">Kabikaboo - Statistics</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="default_width">420</property>
+    <property name="default_height">200</property>
+    <property name="destroy_with_parent">True</property>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkVBox" id="vbox2">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="label_header">
+                <property name="height_request">32</property>
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">&lt;b&gt;&lt;u&gt;Document Statistics&lt;/u&gt;&lt;/b&gt;</property>
+                <property name="use_markup">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="fixed_statsarea">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="label_last_word_count">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Starting Word Count:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_last_word_count_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_current_word_count">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Current Word Count:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">30</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_current_word_count_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">30</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_session_word_count">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Words this Session:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">55</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_session_word_count_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">55</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_session_time">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Time of Session:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">80</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_session_time_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?:??:??</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">80</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_wpm">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Words per Minute:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">105</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_wpm_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">105</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_node_words">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Words in Node:</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">130</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_node_words_number">
+                    <property name="width_request">200</property>
+                    <property name="height_request">24</property>
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">?</property>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                    <property name="y">130</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="fixed1">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkButton" id="button_close">
+                    <property name="label" translatable="yes">Close</property>
+                    <property name="width_request">80</property>
+                    <property name="height_request">28</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">350</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">8</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStatusbar" id="statusbar1">
+            <property name="visible">True</property>
+            <property name="spacing">2</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

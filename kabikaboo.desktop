@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=kabikaboo
+Icon=/usr/share/kabikaboo/kabikaboo.png
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Office;
+StartupNotify=false
+Name=Kabikaboo
+GenericName=Writing Assistant
+Comment=Manage large collections of notes
