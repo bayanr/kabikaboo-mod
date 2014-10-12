@@ -6,7 +6,7 @@ This package is simply a version of Kabikaboo that I provide fixes for. It no lo
 
 To install it on Ubuntu, simply open a terminal and paste this command in.
 
-``` git clone https://github.com/bayanr/kabikaboo-mod && cd kabikaboo-mod && sudo make install ```
+``` git clone https://github.com/bayanr/kabikaboo-mod && cd kabikaboo-mod && sudo apt-get install python-gtksourceview2 && sudo make install ```
 
 If there is another distro you would like to install it for please submit a
 bug report and I will add it in.
